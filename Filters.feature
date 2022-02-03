@@ -19,7 +19,7 @@ Scenario: Choice manufacturer country
 	And user selects country russia
 	Then user sees in the list selena shampoo
 
-Scenario: Alphabetical sorting
+Scenario: Organic certificate button
     When user presses the organic certificate button
 	And product selection is USDA certified
 	Then user sees in the list product organic coconut oil

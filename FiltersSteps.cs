@@ -63,7 +63,7 @@ namespace SFSelenBiotusHM
         [When(@"user presses the organic certificate button")]
         public void WhenUserPressesTheOrganicCertificateButton()
         {
-            _driver.FindElement(By.CssSelector("//body[@id='body']/div/div[4]/div[2]/div[2]/div/div/div[3]/div/div/form/div[6]/div[2]")).Click();
+            _driver.FindElement(By.XPath("//body[@id='body']/div/div[4]/div[2]/div[2]/div/div/div[3]/div/div/form/div[6]/div[2]")).Click();
         }
         
         [When(@"product selection is USDA certified")]
@@ -89,15 +89,15 @@ namespace SFSelenBiotusHM
         [Then(@"user sees in the list selena shampoo")]
         public void ThenUserSeesInTheListSelenaShampoo()
         {
-            _driver.FindElement(By.LinkText("(//a[contains(@href, '/product/shampun-hozyayka-mednoy-gory-mirolada-500ml')])[2]"));
-            Assert.Contains("Селена", _driver.FindElement(By.LinkText("(//a[contains(@href, '/product/shampun-hozyayka-mednoy-gory-mirolada-500ml')])[2]")).Text);
+            _driver.FindElement(By.XPath("//a[contains(text(),'Шампунь «Селена» (Миролада) 500мл')]"));
+            Assert.Contains("Селена", _driver.FindElement(By.XPath("//a[contains(text(),'Шампунь «Селена» (Миролада) 500мл')]")).Text);
         }
         
         [Then(@"user sees in the list product organic coconut oil")]
         public void ThenTheUserSeesInTheListProductOrganicCoconutOil()
         {
-            _driver.FindElement(By.LinkText("Кокосовое масло Вирджин Барака organic 200мл Премиум стекло"));
-            Assert.Contains("Кокосовое масло", _driver.FindElement(By.LinkText("Кокосовое масло Вирджин Барака organic 200мл Премиум стекло")).Text);
+            _driver.FindElement(By.XPath("//a[contains(text(),'Кокосовое масло Вирджин Барака organic 200мл Премиум стекло')]"));
+            Assert.Contains("Кокосовое масло", _driver.FindElement(By.XPath("//a[contains(text(),'Кокосовое масло Вирджин Барака organic 200мл Премиум стекло')]")).Text);
         }
     }
 }

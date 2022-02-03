@@ -223,14 +223,14 @@ this.FeatureBackground();
             this.ScenarioCleanup();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Alphabetical sorting")]
+        [Xunit.SkippableFactAttribute(DisplayName="Organic certificate button")]
         [Xunit.TraitAttribute("FeatureTitle", "Filters")]
-        [Xunit.TraitAttribute("Description", "Alphabetical sorting")]
-        public virtual void AlphabeticalSorting()
+        [Xunit.TraitAttribute("Description", "Organic certificate button")]
+        public virtual void OrganicCertificateButton()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Alphabetical sorting", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Organic certificate button", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 22
 this.ScenarioInitialize(scenarioInfo);
 #line hidden

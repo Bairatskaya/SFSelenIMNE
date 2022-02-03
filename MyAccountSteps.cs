@@ -33,7 +33,7 @@ namespace SFSelenBiotusHM
             _driver.FindElement(By.Id("customer_firstname")).SendKeys("Test");
             _driver.FindElement(By.Id("customer_lastname")).SendKeys("Test");
             _driver.FindElement(By.Id("phone_mobile")).SendKeys("0956462082");
-            _driver.FindElement(By.Id("email")).SendKeys("tast2test1@gmail.com");
+            _driver.FindElement(By.Id("email")).SendKeys("tast22test2@gmail.com");
             _driver.FindElement(By.Id("passwd")).SendKeys("!123qweqwe");
         }
         [When(@"user press button registration")]
